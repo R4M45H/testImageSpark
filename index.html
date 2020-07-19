@@ -15,21 +15,21 @@
   <header class="header">
     <div class="container">
       <div class="nav">
-        <div class="logo">
+        <div class="logo wow fadeIn" data-wow-delay="0.4s">
           <a href="#">Logotype</a>
         </div>
         <div class="nav__menu" id="menu">
-          <ul class="nav__menu-list">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Контакты</a></li>
+          <ul class="nav__menu-list wow fadeIn" data-wow-delay="0.4s">
+            <li><a href="#we">О нас</a></li>
+            <li><a href="#project">Проекты</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
         </div>
-        <div class="number">
+        <div class="number wow fadeIn" data-wow-delay="0.4s">
           <a href="tel:88006009090">8 (800) 600 90 90</a>
         </div>
-        <div class="language">
+        <div class="language wow fadeIn" data-wow-delay="0.4s">
           <a href="#">Ru</a>
           <a href="#">En</a>
         </div>
@@ -37,24 +37,24 @@
           <span></span>
         </button>
       </div>
-      <div class="header__text">
+      <div class="header__text wow fadeIn" data-wow-delay="0.4s">
         <h1 class="header__text-title">НОВЫЙ УРОВЕНЬ ВАШЕГО БИЗНЕСА</h1>
         <p class="header__text-subtitle">Стратегия, UI / UX дизайн, разработка, seo для торговых марок премиум-класса.
         </p>
       </div>
-      <div class="info-more">
-        <a href="#"><span>Подробнее</span></a>
+      <div class="info-more wow fadeIn" data-wow-delay="0.4s" id="info">
+        <a href="#infoMore"><span>Подробнее</span></a>
       </div>
     </div>
   </header>
-
+  
   <!-- Main -->
   <main>
     <!-- Что мы делаем -->
-    <section class="weMake">
-      <h2 class="weMake__title section-title">Что мы делаем?</h2>
+    <section class="weMake" id="we">
+      <h2 class="weMake__title section-title wow fadeInUp" data-wow-offset="200" id="infoMore">Что мы делаем?</h2>
       <div class="container">
-        <div class="weMake__item">
+        <div class="weMake__item wow fadeInUp" data-wow-offset="300" data-wow-delay="0.3s">
           <img src="images/analitics.png" alt="Аналитика" class="weMake__item-img" >
           <h3 class="weMake__item-title">
             Аналитика
@@ -65,7 +65,7 @@
             счет выявления и устранения технических и маркетинговых ошибок.
           </p>
         </div>
-        <div class="weMake__item">
+        <div class="weMake__item wow fadeInUp" data-wow-offset="300" data-wow-delay="0.6s">
           <img src="images/chess.png" alt="Стратегия" class="weMake__item-img">
           <h3 class="weMake__item-title">
             Стратегия
@@ -76,7 +76,7 @@
             вперед.
           </p>
         </div>
-        <div class="weMake__item">
+        <div class="weMake__item wow fadeInUp" data-wow-offset="300" data-wow-delay="0.9s">
           <img src="images/smm.png" alt="SMM" class="weMake__item-img">
           <h3 class="weMake__item-title">
             SMM
@@ -88,7 +88,7 @@
             Facebook.
           </p>
         </div>
-        <div class="weMake__item">
+        <div class="weMake__item wow fadeInUp" data-wow-offset="100" data-wow-delay="1.2s">
           <img src="images/tech.png" alt="Технологии" class="weMake__item-img">
           <h3 class="weMake__item-title">
             Технологии и продакшн
@@ -100,7 +100,7 @@
             интернет-пространства.
           </p>
         </div>
-        <div class="weMake__item">
+        <div class="weMake__item wow fadeInUp" data-wow-offset="100" data-wow-delay="1.5s">
           <img src="images/pencil.png" alt="Дизайн" class="weMake__item-img">
           <h3 class="weMake__item-title">
             Дизайн
@@ -111,16 +111,16 @@
           </p>
         </div>
       </div>
-      <div class="info-more weMake__info-more">
-        <span>Проекты</span>
+      <div class="info-more weMake__info-more info-more  wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s" id="infoProjects">
+        <a href="#projects"><span>Проекты</span></a>
       </div>
       
     </section>
 
     <!-- Gazprom -->
-    <section class="project gazprom">
-      <img class="project__img gazprom__img" src="images/site.png" alt="Сайты">
-      <div class="project__text gazprom__text">
+    <section class="project gazprom" id="project">
+      <img id="projects" class="project__img gazprom__img wow fadeInUp" data-wow-offset="300" data-wow-delay="0.3s" src="images/site.png" alt="Сайты">
+      <div class="project__text gazprom__text wow fadeInRight" data-wow-offset="300" data-wow-delay="0.4s">
         <h2 class="gazprom__title section-title">
           ПАО «Газпром»
         </h2>
@@ -133,8 +133,8 @@
 
     <!-- Tinkoff -->
     <section class="project tinkoff">
-      <img class="project__img tinkoff__img" src="images/phone.png" alt="Смартфон">
-      <div class="project__text tinkoff__text">
+      <img class="project__img tinkoff__img wow fadeInUp" data-wow-offset="300" data-wow-delay="0.4s" src="images/phone.png" alt="Смартфон">
+      <div class="project__text tinkoff__text wow fadeInLeft" data-wow-offset="200" data-wow-delay="0.3s">
         <h2 class="tinkoff__title section-title">
           Тинькофф Банк
         </h2>
@@ -150,8 +150,8 @@
 
     <!-- Adidas -->
     <section class="project adidas">
-      <img class="project__img adidas__img" src="images/monitor.png" alt="Монитор">
-      <div class="project__text adidas__text">
+      <img class="project__img adidas__img wow fadeInLeft" data-wow-offset="300" data-wow-delay="0.3s" src="images/monitor.png" alt="Монитор">
+      <div class="project__text adidas__text wow fadeInUp" data-wow-offset="100" data-wow-delay="0.4s">
         <h2 class="adidas__title section-title">
           Adidas
         </h2>
@@ -164,16 +164,16 @@
     </section>
 
     <!-- Aside project-->
-    <aside class="projects">
+    <aside class="projects wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.3s">
       <a class="project__btn projects__btn" href="#">Все наши проекты</a>
     </aside>
 
     <!-- Six Reason -->
-    <section class="sixReason">
+    <section class="sixReason" id="services">
       <div class="container">
-        <h2 class="sixReason__title section-title">причин работать с нами </h2>
+        <h2 class="sixReason__title section-title wow fadeInDown" data-wow-offset="200" data-wow-delay="0.4s">причин работать с нами </h2>
         <div class="sixReason__wrapper">
-          <div class="sixReason__item">
+          <div class="sixReason__item wow fadeInUp" data-wow-offset="200" data-wow-delay="0.3s">
             <h3 class="sixReason__item-title">
               Профессионализм
             </h3>
@@ -181,7 +181,7 @@
               Мы нацелены развить ваш бизнес за счет технических решений, а не просто выполнить техническое задание.
             </p>
           </div>
-          <div class="sixReason__item">
+          <div class="sixReason__item wow fadeInUp" data-wow-offset="200" data-wow-delay="0.5s">
             <h3 class="sixReason__item-title">
               Актуальность решений
             </h3>
@@ -190,7 +190,7 @@
               масштабируемые решения.
             </p>
           </div>
-          <div class="sixReason__item">
+          <div class="sixReason__item wow fadeInUp" data-wow-offset="200" data-wow-delay="0.7s">
             <h3 class="sixReason__item-title">
               Победы
             </h3>
@@ -199,7 +199,7 @@
               веб-разработки.
             </p>
           </div>
-          <div class="sixReason__item">
+          <div class="sixReason__item wow fadeInUp" data-wow-offset="100" data-wow-delay="0.9s">
             <h3 class="sixReason__item-title">
               Прозрачность
             </h3>
@@ -207,7 +207,7 @@
               Сроки и бюджет разработки открыты и предсказуемы — мы заботимся об этом еще на этапе подписания договора.
             </p>
           </div>
-          <div class="sixReason__item">
+          <div class="sixReason__item wow fadeInUp" data-wow-offset="100" data-wow-delay="1.2s">
             <h3 class="sixReason__item-title">
               Опыт работы с highload проектами
             </h3>
@@ -218,7 +218,7 @@
 
             </p>
           </div>
-          <div class="sixReason__item">
+          <div class="sixReason__item wow fadeInUp" data-wow-offset="100" data-wow-delay="1.4s">
             <h3 class="sixReason__item-title">
               Использование fullstack технологий
             </h3>
@@ -236,23 +236,23 @@
     <section class="clients">
       <h2 class="clients__title section-title">Наши клиенты</h2>
       <div class="container">
-        <a class="clients__link" href="#"><img class="clients__img" src="images/tinkoff.png" alt="Тинькофф банк"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/gazprom.png" alt="Газпром"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/mu.png" alt="Manchester United"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/hermitage.png" alt="Эрмитаж"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/moleskine.png" alt="MOLESKINE"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/starbucks.png" alt="Starbucks"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/audi.png" alt="Audi"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/adidas.png" alt="Adidas"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/ginza.png" alt="Ginza Project"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/oscar.png" alt="OSCARS"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/alfa.png" alt="Альфа банк"></a>
-        <a class="clients__link" href="#"><img class="clients__img" src="images/showtime.png" alt="Showtime"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/tinkoff.png" alt="Тинькофф банк"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/gazprom.png" alt="Газпром"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/mu.png" alt="Manchester United"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/hermitage.png" alt="Эрмитаж"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/moleskine.png" alt="MOLESKINE"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/starbucks.png" alt="Starbucks"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/audi.png" alt="Audi"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/adidas.png" alt="Adidas"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/ginza.png" alt="Ginza Project"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/oscar.png" alt="OSCARS"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/alfa.png" alt="Альфа банк"></a>
+        <a class="clients__link" href="#"><img class="clients__img" target="_blank" src="images/showtime.png" alt="Showtime"></a>
       </div>
     </section>
 
     <!-- Blockquote -->
-    <aside class="blockquote">
+    <aside class="blockquote wow fadeInLeft" data-wow-offset="100" data-wow-delay="0.3s">
       <p class="blockquote__text">
         Нам часто говорят: «Это лучше, чем я мог представить». Мы отвечаем, что это просто хорошая работа.
       </p>
@@ -264,8 +264,8 @@
         <div class="owl-carousel">
 
           <div class="owl-carousel__slide">
-            <img class="owl-carousel__slide-img" src="images/review1.jpg" alt="Отзыв">
-            <div class="owl-carousel__slide-text">
+            <img class="owl-carousel__slide-img wow fadeInLeft" data-wow-offset="300" data-wow-delay="0.3s" src="images/review1.jpg" alt="Отзыв">
+            <div class="owl-carousel__slide-text  wow fadeInUp" data-wow-offset="300" data-wow-delay="0.3s">
               <span class="owl-carousel__slide-textAuthor">Говард Шульц</span>
               <p class="owl-carousel__slide-textAuthorInfo">
                 председатель совета директоров, главный управляющий и президент компании Starbucks 
@@ -298,7 +298,7 @@
 
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="feedback">
       <h2 class="feedback__title section-title">
         Вы уже хотите пообщаться с нами?
@@ -309,13 +309,14 @@
 
     <div class="social">
       <div class="social__box">
-        <a href="#"><img src="images/be.png" alt="" class="social__box-img"></a>
-        <a href="#"><img src="images/ball.png" alt="ball" class="social__box-img"></a>
-        <a href="#"><img src="images/vk.png" alt="vk" class="social__box-img"></a>
-        <a href="#"><img src="images/fb.png" alt="fb" class="social__box-img"></a>
+        <a href="#"><img class="social__box-img wow fadeIn" data-wow-offset="50" data-wow-delay="0.3s" target="_blank" src="images/be.png" alt="beehance"></a>
+        <a href="#"><img class="social__box-img wow fadeIn" data-wow-offset="50" data-wow-delay="0.5s" target="_blank" src="images/ball.png" alt="ball"></a>
+        <a href="#"><img class="social__box-img wow fadeIn" data-wow-offset="50" data-wow-delay="0.7s" target="_blank" src="images/vk.png" alt="vk"></a>
+        <a href="#"><img class="social__box-img wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s" target="_blank" src="images/fb.png" alt="fb"></a>
       </div>
     </div>
   </footer>
+  <a href="#" class="scrollup animated pulse slow infinite" title="Вернуться в начало"></a>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

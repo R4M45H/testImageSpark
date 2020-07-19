@@ -1,12 +1,3 @@
-if (document.body.clientWidth < 640) {
-  const number = document.body.querySelector('.number'),
-        language = document.body.querySelector('.language');
-        
-  number.remove();
-  language.remove();
-}
-
-
 $('.owl-carousel').owlCarousel({
   loop: false,
   smartSpeed: 1000,
@@ -36,7 +27,7 @@ $(".menu-btn").on("click", function () {
     $("#menu").removeClass("responsive");
   } else {
     $("#menu").addClass("responsive");
-    $(".nav__menu-list li a").click(function() {
+    $(".nav__menu-list li a").click(function () {
       $("#menu").removeClass("responsive");
       $(".menu-btn").removeClass("active");
     });
@@ -53,7 +44,7 @@ $(".menu-btn").on("click", function () {
 
 // Smooth scroll naivgation
 $(document).ready(function () {
-  $("#menu, #reserv-btn").on("click", "a", function (event) {
+  $("#menu, #info, #infoProjects").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
 
@@ -63,8 +54,36 @@ $(document).ready(function () {
       top = $(id).offset().top;
 
     //анимируем переход на расстояние - top за 1500 мс
-    $("body,html").animate({ scrollTop: top }, 1500);
+    $("body,html").animate({
+      scrollTop: top
+    }, 1500);
   });
 });
 
 
+//Возврат в начало сайта
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 1100) {
+    $('.scrollup').fadeIn();
+  } else {
+    $('.scrollup').fadeOut();
+  }
+});
+
+$('.scrollup').click(function () {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 1500);
+  return false;
+});
+
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       false,       // default
+  live:         true        // default
+}
+);
+wow.init();
