@@ -6,10 +6,6 @@ if (document.body.clientWidth < 640) {
   language.remove();
 }
 
-  // let makeInfo = document.body.querySelector('.weMake__item-info');
-  //     makeInfo.textContent = "Консалтинг и аудит сайтов.";
-      
-
 
 $('.owl-carousel').owlCarousel({
   loop: false,
@@ -40,8 +36,13 @@ $(".menu-btn").on("click", function () {
     $("#menu").removeClass("responsive");
   } else {
     $("#menu").addClass("responsive");
+    $(".nav__menu-list li a").click(function() {
+      $("#menu").removeClass("responsive");
+      $(".menu-btn").removeClass("active");
+    });
   }
 });
+
 $(".menu-btn").on("click", function () {
   if ($(this).hasClass("active")) {
     $(".menu-btn").removeClass("active");
@@ -49,14 +50,21 @@ $(".menu-btn").on("click", function () {
     $(".menu-btn").addClass("active");
   }
 });
-//Closed menu after clicking outside the menu area
 
-/* if ($(document).width() < 450)
-  $(document).mouseup(function (e) {
-    if (!$(e.target).closest(".header__wrapper").length) {
-      $(".nav").slideUp();
-      $(".menu-btn").removeClass("active");
-    }
-    e.stopPropagation();
-  }); */
+// Smooth scroll naivgation
+$(document).ready(function () {
+  $("#menu, #reserv-btn").on("click", "a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr("href"),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+
+    //анимируем переход на расстояние - top за 1500 мс
+    $("body,html").animate({ scrollTop: top }, 1500);
+  });
+});
+
 
