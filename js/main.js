@@ -13,19 +13,22 @@ if (document.body.clientWidth < 640) {
 
 $('.owl-carousel').owlCarousel({
   loop: false,
-  dots: false,
   smartSpeed: 1000,
   margin: 10,
-  nav: true,
-
+  touchDrag: false,
   navText: ["<img src='images/sliderArrowPrev.png'>", "<img src='images/sliderArrowNext.png'>"],
   responsive: {
-    1025: {
-      touchDrag: false,
+    320: {
+      dots: true,
+      nav: false,
+      touchDrag: true,
+      mouseDrag: true,
       items: 1
     },
-    320: {
-      touchDrag: true,
+    1000: {
+      nav: true,
+      touchDrag: false,
+      mouseDrag: false,
       items: 1
     }
   }
