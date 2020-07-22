@@ -21,7 +21,7 @@ $('.owl-carousel').owlCarousel({
   }
 });
 
-//Menu-btn
+//Menu-btn for closed menu after click on link
 $(".menu-btn").on("click", function () {
   if ($('#menu').hasClass("responsive")) {
     $("#menu").removeClass("responsive");
